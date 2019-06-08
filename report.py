@@ -8,6 +8,13 @@ PROBLEM_03 = 'On which days did more than 1% of requests lead to errors?'
 
 
 def pretty_print(problem_description):
+    """
+    Makes original function output prettier.
+
+    Adds some styling to the original function output.
+    Also prints out the problem description before the original
+    function prints out the solution.
+    """
     def decor_func(original_func):
         def wrapper_func(*args, **kwargs):
             print('\nProblem:')
